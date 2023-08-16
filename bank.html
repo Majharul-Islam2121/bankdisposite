@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center font-semibold text-6xl">let's get some <span class="text-pink-500	">moneyk</span></h1>
+    </header>
+
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3  w-[70%]  mx-auto">
+                <div class="bg-green-400 h-[120px] p-8 w-[250px] mx-auto text-white">
+                    <h1 class="text-3xl">deposite</h1>
+                    <h3 class="text-2xl">$ <span id="doller-btn">00</span></h3>
+                </div>
+
+                <div class="bg-orange-400 h-[120px] p-8 w-[250px] mx-auto text-white">
+                    <h1 class="text-3xl">withdrow</h1>
+                    <h3 class="text-2xl">$ <span id="btn-Withdrow">00</span></h3>
+                </div>
+                <div class="bg-yellow-400 h-[120px] p-8 w-[250px] mx-auto text-white">
+                    <h1 class="text-3xl">balance</h1>
+                    <h3 class="text-2xl"> $<span id="balancebalance">1240</span></h3>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section class="mt-10 grid grid-cols-2 items-center w-[900px] mx-auto">
+            <div class="bg-gray-700 h-[200px] w-[400px] text-white mx-auto">
+                <h1 class="text-4xl  ml-6 mt-4">please deposite</h1>
+                <input id="deposite-site" class="block rounded-[6px] text-black p-3 ml-[70px]  w-[270px] px-3  h-5 mt-4"
+                    type="text" name="" placeholder="amaount you want to deposite">
+                <button id="deposite-btn"
+                    class=" text-xl ml-20 mt-5 font-semibold	 bg-lime-500 p-3 hover:bg-gray-400 text-black rounded-lg">deposite</button>
+
+            </div>
+            <div class="bg-orange-400 text-white h-[200px] w-[400px] mx-auto">
+                <h1 class="text-4xl  ml-6 mt-3">please withdrow</h1>
+                <input id="withdrow-site" class="p-3 rounded-[6px] text-black ml-[70px] w-[270px] px-3 h-5 mt-4 block"
+                    type="text" name="" placeholder="amount you want to withdrow">
+                <button id="withdrow-btn"
+                    class="ml-20 text-xl mt-5 font-semibold	 bg-lime-500 p-3 hover:bg-gray-400 text-black rounded-lg">withdrow</button>
+            </div>
+
+        </section>
+    </main>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdrow.js"></script>
+</body>
+
+</html>
